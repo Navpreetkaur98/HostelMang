@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  
+  
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 83%;
+  width: 230px;
+  position: fixed;
+  
+  top: 120px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the 
+dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#000000;
+   color: white;
+   text-align: center;
+}
+.header {
+     position: fixed;
+  padding: 10px;
+  text-align: center;
+  background: #000000;
+  color: white;
+width: 100%;
+  top:0;
+}
+.header h1 {
+  font-size: 40px;
+}
+
+
+.main {
+  padding: 16px;
+  margin-top: 130px;
+  height: 400px;  
+
+}
+
+.main {
+  margin-left: 280px;
+position in px */
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+
+.container {
+ 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  
+  bottom: 0;
+  background:rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);  /* Fallback color */
+  /* Black background with 0.5 opacity */
+  color: #000000;
+  width: 1166px;
+  padding: 18px;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 40%;
+}
+
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+   <div class="header">
+    
+    <img src="vv.png" alt="logo" style="width:220px; height:100px; float:left;">
+    <p class="float-right" style="color:white; font-size:30px;">ADMIN</p>
+  
+  <img src="ww.jpg" class="float-right" alt="Paris" width="60" height="60"> 
+ 
+</div> 
+<div class="sidenav">
+  <a href="adminDashboard.html">DASHBOARD</a>
+  <a href="adminprofile.html">PROFILE</a>
+  <a href="notice.jsp">NOTICE</a>
+  <button class="dropdown-btn">STUDENTS 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="registration.jsp">ADD STUDENTS</a>
+    <a href="addedstudents.html">UPDATE STUDENTS</a>
+    
+  </div>
+ <button class="dropdown-btn">LOGOUT
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="reset.html">CHANGE PASSWORD</a>
+    <a href="login.html">LOG OUT</a>
+    
+  </div>
+</div>
+
+<div class="main">
+ <div style="color: white; background-color: black"><center><font size="50">CHITKARA UNIVERSITY,H.P</font><center></div>
+        
+            <br>
+
+<div class="container">
+  <img src="cf.jpg" alt="Notebook" style="width:1200px; height:500px;">
+  <div class="content">
+      <h1>CHITKARA UNIVERSITY</h1>
+    <p>EXPLORE YOUR POTENTIAL!!!...Chitkara University is one of the North india's leading teaching and research institutions with campuses in Chandigarh.</p>
+  </div>
+</div>
+  <br>
+  <center><h1>YOUR CAREER NEEDS CHITKARA UNIVERSITY</h1>
+<hr>
+
+<h2>CHITKARA UNIVERSITY,HIMACHAL PRADESH(Baddi)</h2>
+<h3>Explore your Potential</h3></center>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="cbs.jpg" alt="Mountains" style="width:400px; height:200px;">
+      <h3>Your Career Needs 
+Chitkara University</h3>
+      <p>Chitkara University in Punjab, has been founded by Dr. Ashok Chitkara and Dr. Madhu Chitkara, who have been passionate teachers for more than 40 years now. </p>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="content">
+    <img src="cc.jpg" alt="Lights" style="width:400px; height:200px;">
+      <h3>FEES STRUCTURE AND ELIGIBILITY</h3>
+      <p>Fee Structure and Eligibility Criteria for various Undergraduate & Post Graduate Programs of Chitkara University.
+
+Fee Structure and Eligibility Criteria for various Undergraduate & Post Graduate Programs of Chitkara University.
+
+</p>
+    </div>
+  </div>
+   
+  <div class="column">
+    <div class="content">
+    <img src="nn.jpg" alt="Nature" style="width:400px; height:200px;">
+      <h3>Admission procedure & Fees</h3>
+      <p> Year Post Graduate Porgrams
+Marketing
+Banking & Finance
+Financial Markets Practice in collaboratio</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="bs.jpg" alt="Mountains" style="width:400px; height:200px;">
+      <h3>PUNJAB DGPS LAUNCH DRUG AWARENESS</h3>
+      <p>The Punjab Police and the special task force (STF) formed to curb the drug menace, initiated a state-level program in which school, college and university students will be apprised of the ill-effects of drug abuse.</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+    <img src="abb.jpg" alt="Mountains" style="width:400px; height:200px;">
+      <h3>CONTACT US</h3>
+      <p>Punjab Campus
+Chandigarh-Patiala National Highway (NH-64)
+Punjab- 140 401, India
+Mr. Amandeep Singh: +91 8288088578</p>
+    </div>
+  </div>
+ <div class="column">
+    <div class="content">
+    <img src="cbs.jpg" alt="Mountains" style="width:400px; height:200px;">
+      <h3>CHITKARA BUSINESS SCHOOL</h3>
+      <p>Chitkara Business School is one of the fastest growing Business Schools of the country and has been consistently ranked among the top 75 management institutions of the country, </p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="cc.jpg" alt="Bear" style="width:100%">
+  
+</div>
+</div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple 
+dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+ <div class="footer">
+  
+    <br>
+<font size="3" color="white"> 
+<p>All trademarks are properties of their respective owners.©2017-Smart Travel™ Media Pvt Ltd.All rights reserved.</p>
+</font>
+</div>
+</body>
+</html> 

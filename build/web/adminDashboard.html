@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    
+ <style>
+     .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#282424;
+   color: white;
+   text-align: center;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #0B61B2;
+  color: white;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+* {
+  box-sizing: border-box;
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 50px 25px;
+  width: 70%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+  width:70%;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  width:70%;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+ </style>
+</head>
+<body style="background-color:#E9F7EF  ">
+<div class="header">
+  <h1>Dashboard</h1>
+  
+</div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="reset.html">Change password</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Logout</a>
+      </li>
+        
+    </ul>
+  </div> 
+<img src="ww.jpg" class="float-right" alt="Paris" width="50" height="40"> 
+ <p style="color:white; font-size:20px;">ADMIN</p>
+</nav>
+<br>
+ <div class="container">
+     <b><h1>CHITKARA UNIVERSITY </h1></b>
+     
+     <div style="color: white; background-color: black"><center><font size="4"> The rules contained in this book are for better management of the hostels and for creating a clean
+and secure atmosphere for the academic advancement of the students. All students are requested
+to co-operate and strictly implement these rules. This will help the management to make the stay of
+students in CU hostels as comfortable and enjoyable as possible. These rules are by no means
+comprehensive.</font><center></div>
+     
+     <br>
+    <div class="card-deck">
+    <div class="card bg-primary">
+      <div class="card-body text-center">
+          <img src="s1.png" height="180" width="200">
+        <p style="font-size:20;" class="card-text">450(GIRLS)</p>
+        <p class="card-text">750(BOYS)</p>
+      </div>
+    </div>
+    <div class="card bg-warning">
+      <div class="card-body text-center">
+          <img src="h1.png" height="180" width="200">
+         <p class="card-text">4(GIRLS)</p>
+         <p class="card-text">6(BOYS)</p>
+        
+      </div>
+    </div>
+    <div class="card bg-success">
+      <div class="card-body text-center">
+          <img src="t1.png" height="180" width="200">
+          <p class="card-text">120(MALE)</p>
+        <p class="card-text">70(FEMALE)</p>
+        
+      </div>
+    </div>
+    <div class="card bg-danger">
+      <div class="card-body text-center">
+          <img src="m1.jpg" height="180" width="200">
+        <p class="card-text">1(PAID MESS)</p>
+        <p class="card-text">1(FOR HOSTELERS)</p>
+      </div>
+    </div>  
+  </div>
+</div>
+<br><br>
+<div class="container-fluid">
+ 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 bg-success">
+          <center>  <h1>RECORDS</h1></center>
+          <center>
+          <div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['STUDENTS', 8],
+  ['MESS', 2],
+  ['GAMES', 4],
+  ['Gym', 2],
+  ['HOSTELS', 8]
+]);
+
+  
+  var options = {'title':'RECORD OF STUDENTS','width':550, 'height':400};
+
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</center> 
+          
+      </div>
+        
+      <div class="col-sm-6  bg-dark">
+          
+          <center><font color="white" size="22">Academic Calendar</font></center>
+         <center>
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August<br>
+      <span style="font-size:18px">2017</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+  </div>
+  </div>
+      </div>
+    </div>
+  </div>
+  </center>
+</div>
+<br><br>
+<div style="background-color:#76D7C4  ;color:black;">
+    <img src="cf.jpg" height="500" width="1800" >
+    <center><h1>CHITKARA UNIVERSITY’S HOSTEL RULES</h1><br></center>
+    <div style="color: black; background-color:#D1F2EB  ;"><center><font size="4">The rules contained in this book are for better management of the hostels and for creating a clean
+and secure atmosphere for the academic advancement of the students. All students are requested
+to co-operate and strictly implement these rules. This will help the management to make the stay of
+students in CU hostels as comfortable and enjoyable as possible. These rules are by no means
+comprehensive.</font><center></div>
+
+<br><br>
+<h2>ALLOTMENT / VACATION AND SHIFTING OF HOSTELS</h2><br>
+<div style="color: black; background-color:#D1F2EB  ;"><center><font size="4">1. Every attempt will be made to provide hostel accommodation to all students desirous of staying
+    in the hostel.<br>
+2. Hostel accommodation is allotted purely at the discretion of the Dean Student Welfare and on
+the condition that the student agrees to abide by all the rules and regulations of the hostel. The
+Dean Student Welfare may refuse hostel facilities without assigning any reason or remove a
+resident from the hostel at any time on disciplinary grounds. Students may be asked on
+disciplinary grounds to vacate their rooms at short notice. Similarly, students may be required to
+shift to alternate accommodation at short notice due to administrative reason. The hostel
+management reserves the right to break open any room which is not vacated, pack up the
+contents and store it. No complaints of breakage or loss will be entertained.<br>
+3. The rooms allotted to the students at the time of admission are for a limited period of up to one
+year or less. Residents are required to shift to other block/rooms as and when informed by
+hostel authorities. This shifting may be necessitated due to administrative reasons and students
+are required to co-operate. Residents must occupy rooms specifically allotted to them. Residents
+shall not change over to any other room except with the written permission of the Dean Student
+Welfare. Allotment of a room made to any student is subject to cancellation if HE/SHE fails to
+occupy it in the stipulated time or is found absent from the room without prior information or
+any valid reason. Resident will also forfeit their allotment if they fail to clear all their dues to the
+hostel by the scheduled date.</font><center></div>
+
+<br>
+<h2>WAITING LIST FOR CHANGING HOSTELS/ROOMS</h2>
+<div style="color: black; background-color:#D1F2EB  ;"><center><font size="4">Students desirous of shifting to different rooms within their present hostels or wishing to shift to
+other hostels must put their names in the “waiting list” being maintained at Dean Student
+Welfare’s office. Such students will be accommodated based purely on the waiting list seniority.</font><center></div>
+
+<br>
+<h2>MAINTENANCE OF ROOMS</h2>
+<div style="color: black; background-color:#D1F2EB  ;"><center><font size="4">The rooms have been distempered and painted as per schedule and will be maintained regularly
+by the management as per the maintenance schedule.
+All maintenance complaints/requirements will be attended to by maintenance staff.
+Complaint(s) must be entered in the register(s) available with warden/supervisors of their
+hostels</font><center></div>
+
+<br>
+<h2>DAMAGE OF HOSTEL PROPERTY</h2>
+<div style="color: black; background-color:#D1F2EB  ;"><center><font size="4">Students are advised to check the items thoroughly before signing the inventory. Any Damage to
+hostel property will be recovered by the residents who are responsible for the damage. This
+includes driving in of nails, defacing of wall and damage to fixtures and furniture. In case of
+intentional damage to hostel property, heavy fine will be levied in addition to disciplinary action.
+In case culprit is not identified, the cost of damaged property will be recovered from all students
+staying in that hostel/floor.</font><center></div>
+
+<h2>CONDUCT AND DISCIPLINE</h2>
+<div style="color: black; background-color:#D1F2EB  ;"><center><font size="4">All instructions/notices displayed on notice board will be deemed to have been read by all the
+residents and excuses for non-compliance of such instruction and notices will not be accepted.
+Residents are advised to look at the notice board everyday to acquaint themselves with latest
+information/orders.</font><center></div>
+
+</div>
+
+<br><br><br><br>
+<div class="footer">
+  
+    <br>
+<font size="3" color="white"> 
+<p>All trademarks are properties of their respective owners.©2017-Smart Travel™ Media Pvt Ltd.All rights reserved.</p>
+</font>
+</div>
+
+</body>
+</html>
+
+
+
